@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local config files (keep local only)
+.atuin
+
+# Service account keys
+*-sa-key.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local tooling binaries
+bin/
+
+# Test cache
+.pytest_cache/
+
+# Phase working notes (local only, not published docs)
+Phase1.md

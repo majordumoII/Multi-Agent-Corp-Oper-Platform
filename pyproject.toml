@@ -1,0 +1,25 @@
+[project]
+name = "multi-agent-corp-ops"
+version = "0.1.0"
+description = "Multi-agent corporate operations platform — CrewAI-shaped agents on Cloud Run, orchestrating Project 2's permission-aware RAG service"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.115.6",
+    "google-auth>=2.36.0",
+    "httpx>=0.28.1",
+    "pydantic>=2.9.0",
+    "python-dotenv>=1.2.2",
+    "uvicorn[standard]>=0.34.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "pytest-asyncio>=0.25.0",
+    "pytest-mock>=3.15.1",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+asyncio_mode = "auto"
